@@ -1,0 +1,129 @@
+/* ===============================
+   REGISTER PAGE ONLY
+   =============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Page Background ===== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* ===== Glass Card ===== */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* ===== Title ===== */
+.auth-card h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.auth-card .sub {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+/* ===== Form Group ===== */
+.auth-group {
+  margin-bottom: 16px;
+}
+
+/* ===== Inputs ===== */
+.auth-group input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.auth-group input::placeholder {
+  color: #eee;
+}
+
+.auth-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #fff;
+}
+
+/* ===== Button ===== */
+.auth-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== Footer Text ===== */
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== Messages ===== */
+.auth-error {
+  background: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.auth-success {
+  background: #198754;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+}
